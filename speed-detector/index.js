@@ -1,8 +1,10 @@
+// import readline library
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
 })
 
+// function to calculate speed points
 const points = (speed) => {
     if (speed === "") {
         console.log("Please enter a number")
@@ -23,6 +25,7 @@ const points = (speed) => {
     }
 }
 
+// get user input
 readline.question('Please enter the speed: ', speed => {
     points(speed)
     readline.close()

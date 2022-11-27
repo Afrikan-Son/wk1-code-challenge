@@ -1,8 +1,10 @@
+// import readline library
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
 })
 
+// function to grade student
 function grade(score) {
     if (score === "") {
         console.log("Please enter a number")
@@ -30,9 +32,8 @@ function grade(score) {
     }
 }
 
-readline.question('Please enter student marks:', score => {
+// get user input
+readline.question('Please enter student marks: ', score => {
     grade(score)
     readline.close()
 })
-
-// grade(marks)
