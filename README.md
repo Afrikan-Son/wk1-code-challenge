@@ -22,11 +22,11 @@ A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.
 
 # Running the applications
 ## grade-generator
-- To run, run this command in terminal: 
+1. To run, run this command in terminal: 
 `node grade-generator/index.js`
--It will propmt you to enter a student marks.
--Enter any number between 0 and 100 and press Enter.
--Student Grade will be returned between A and E.
+2. It will propmt you to enter a student marks.
+3. Enter any number between 0 and 100 and press Enter.
+4. Student Grade will be returned between A and E.
 
  
 
@@ -38,11 +38,11 @@ For example, if the speed is 80, it should print: “Points: 2”. If the driver
 
 # Running the applications
 ## speed-detector
-- To run, run this command in terminal: 
+1. To run, run this command in terminal: 
 `node speed-detector/index.js`
--It will prompt you to enter your speed.
--Enter your speed and press Enter.
--Your speed will return as 'Ok' if speed is less than 70, and your speed demerits will be returned if higher than 70.
+2. It will prompt you to enter your speed.
+3. Enter your speed and press Enter.
+4. Your speed will return as 'Ok' if speed is less than 70, and your speed demerits will be returned if higher than 70.
  
 
 # Challenge 3: Net Salary Calculator (Toy Problem)
@@ -56,11 +56,11 @@ https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 
 # Running the applications
 ## net-salary
-- To run, run this command in terminal: 
+1. To run, run this command in terminal: 
 `node net-salary/index.js`
--It will prompt you to enter a gross salary.
--Enter your gross salary when prompted and press Enter.
--Your gross salary with deductions and benefits will have been calculated and will give you your total.
+2. It will prompt you to enter a gross salary.
+3. Enter your gross salary when prompted and press Enter.
+4. Your gross salary with deductions and benefits will have been calculated and will give you your total.
 
 
 # Authors
