@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Speed Detector</title>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th colspan="2">Speed Detector</th>
+      </tr>
+      <tr>
+        <td>Please enter speed:</td>
+        <td><input type="text" id="speed-input"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><button onclick="calculatePoints()">Calculate</button></td>
+      </tr>
+      <tr>
+        <td>Demerit points:</td>
+        <td><span id="points-output"></span></td>
+      </tr>
+      <tr>
+        <td>Status:</td>
+        <td><span id="status-output"></span></td>
+      </tr>
+    </table>
+
+    <script>
+      const calculatePoints = () => {
+        const speedInput = document.getElementById("speed-input");
+        const pointsOutput = document.getElementById("points-output");
+        const statusOutput = document.getElementById("status-output");
+        
+        const speed = Number(speedInput.value);
+        if (isNaN(speed)) {
+          pointsOutput.innerHTML = "";
+          statusOutput.innerHTML = "Please enter a number";
+        } else if (speed < 71) {
+          pointsOutput.innerHTML = "";
+          statusOutput.innerHTML = "Ok";
+        } else if (speed > 130) {
+          pointsOutput.innerHTML = "";
+          statusOutput.innerHTML = "License suspended";
+        } else {
+          const balance = speed - 70;
+          const points = Math.floor(balance / 5);
+          if (points > 12) {
+            pointsOutput.innerHTML = "";
+            statusOutput.innerHTML = "License suspended";
+          } else {
+            pointsOutput.innerHTML = `Points: ${points}`;
+            statusOutput.innerHTML = "Ok";
+          }
+        }
+      };
+    </script>
+  </body>
+</html>
