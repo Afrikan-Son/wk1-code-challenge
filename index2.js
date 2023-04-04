@@ -1,3 +1,4 @@
+//SPEED DETECTOR
 function calculate() {
     const speed = document.getElementById('speed').value;
     if (speed === "") {
