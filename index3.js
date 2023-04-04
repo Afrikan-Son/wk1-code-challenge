@@ -69,3 +69,4 @@ function calculateNetSalary() {
     const netSalary = grossSalary - (grossSalary * taxRate(grossSalary)) - nhifDeduction(grossSalary) - nssfDeduction;
     document.getElementById('netSalary').value = netSalary;
 }
+
