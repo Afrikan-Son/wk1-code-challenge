@@ -1,4 +1,5 @@
 //Grade Generator
+
 function generateGrade() {
     const marksInput = document.getElementById("marks");
     const gradeOutput = document.getElementById("grade");
